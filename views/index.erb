@@ -1,0 +1,6 @@
+<h1>Welcome to Poetry Blog</h1>
+<ul>
+  <% poems.each_with_index do |poem, index| %>
+    <li><a href="/poem/<%= index %>"><%= poem['title'] %></a></li>
+  <% end %>
+</ul>
